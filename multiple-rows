@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <script>
+            var counter = 0; 
+            propducts.map(product=>{ 
+                counter = counter +1;
+                if(counter < 6)
+                return (<div class="col">{product /*do somthing with your data to style it*/}</div>);
+                else
+                    {
+                        counter = 0;
+                        return (<div class="col">{product /*do somthing with your data to style it*/}</div></div><div class="row">);
+                    }
+            };
+        </script>
+    </div>
+</div>
